@@ -1,14 +1,6 @@
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-body {
-    margin: 0;
-    background-color: yellow;
+@import 'vars';
+@import 'global';
+@import 'fonts';
+.header__menu-item {
+    text-decoration: none;
 }
