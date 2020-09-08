@@ -11,8 +11,12 @@ html {
 body {
     margin: 0;
     background-color: white;
+    color: white;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .container {
     max-width: 1170px;
+    margin: 0 auto;
 }

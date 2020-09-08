@@ -1,6 +1,53 @@
 @import 'vars';
 @import 'global';
 @import 'fonts';
+.header__menu-list,
 .header__menu-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: $bgc-header;
+}
+
+.header__logo {
+    padding: 15px 0;
+}
+
+.header__menu-item-link {
+    display: inline-block;
     text-decoration: none;
+}
+
+.header__button {
+    height: 35px;
+    background-color: $button_blue;
+    border-radius: 15px;
+    font-size: 14px;
+    padding: 9px 20px;
+}
+
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    .header__menu-item {
+        &+li {
+            margin-left: 30px;
+        }
+    }
+}
+
+.header__menu-inner {
+    display: flex;
+    justify-content: space-between;
 }
