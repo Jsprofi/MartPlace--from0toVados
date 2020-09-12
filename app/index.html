@@ -9,15 +9,28 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<header class="header">
-    <div class="container">
-        <div class="header__top-inner">
-            <div class="header__logo">
-                <a class="header__logo-link" href="#">
-                    <img class="header__logo-img" src="images/logo.png" alt="Logo">
-                </a>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <div class="header__logo">
+                        <a class="header__logo-link" href="#">
+                            <img class="header__logo-img" src="images/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="header__button">Become a Seller</div>
+                    <div class="user__box">
+                        <div class="user__box-avatar"></div>
+                        <div class="user__box-info">
+                            <div class="user__box-username">Taofiq Hakim</div>
+                            <div class="user__box-userbalance">$20.45</div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="header__button">Become a Seller</div>
         </div>
         <div class="header__menu">
             <div class="container">
@@ -25,25 +38,41 @@
 
                     <div class="menu">
                         <ul class="header__menu-list">
-                            <li header__menu-item><a class="header__menu-item-link" href="#">HOME</a></li>
-                            <li header__menu-item><a class="header__menu-item-link" href="#">all products</a></li>
-                            <li header__menu-item><a class="header__menu-item-link" href="#">wordpress</a></li>
-                            <li header__menu-item><a class="header__menu-item-link" href="#">festures</a></li>
-                            <li header__menu-item><a class="header__menu-item-link" href="#">Pages</a></li>
+                            <li class="header__menu-item"><a class="header__menu-item-link" href="#">HOME</a></li>
+                            <li class="header__menu-item"><a class="header__menu-item-link" href="#">all products</a></li>
+                            <li class="header__menu-item"><a class="header__menu-item-link" href="#">wordpress</a></li>
+                            <li class="header__menu-item"><a class="header__menu-item-link" href="#">festures</a></li>
+                            <li class="header__menu-item"><a class="header__menu-item-link" href="#">Pages</a></li>
                         </ul>
                     </div>
 
                     <div class="search__form">
-                        search
+                        <form>
+                            <input class="search__form-input" type="text" placeholder="Search product here..." required>
+                            <button type="submit"><img class="search_icon" src="images/icons/search.png" alt=""></button>
+
                     </div>
 
                 </div>
             </div>
         </div>
 
-</header>
+    </header>
 
-<body>
+    <section class="big__info">
+        <div class="container">
+            <div class="big__info-title">Create Your Own <span>Digital Product Marketplace</span></div>
+            <div class="big__info-text">MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products</div>
+            <div class="big__info-buttons">
+                <div class="big__info-innerbtn">
+                    <div class="big__info-button">View All Products</div>
+                    <div class="big__info-button">Popular Products</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
