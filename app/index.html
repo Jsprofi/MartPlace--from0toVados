@@ -57,6 +57,7 @@
                     <div class="search__form">
                         <form>
                             <input class="search__form-input" type="text" placeholder="Search product here..." required>
+
                             <button type="submit"><img class="search_icon" src="images/icons/search.png" alt=""></button>
                         </form>
 
@@ -81,8 +82,14 @@
                 </div>
                 <div class="biginfo__search">
                     <div class="biginfo__search-box">
-                        <form>
+                        <form class="biginfo__search-form">
                             <input class="search__form-input" type="text" placeholder="Search your products..." required>
+                            <select class="search__form-select">
+                              <option>All Categories</option>
+                              <option>Site</option>
+                              <option>Template</option>
+                              <option>Authors</option>
+                              </select>
                             <button class="biginfo__search-btn" type="submit">Search Now </button>
                         </form>
                     </div>
@@ -127,12 +134,20 @@
                     <div class="weekly__title-sliderbtn"></div>
                 </div>
                 <div class="weekly__products-slider">
-                    <div class="weekly__products-images"></div>
-                    <div class="weekly__products-item">
+                    <div class="weekly__products-images" style="background-image: url(images/template-1.png); "></div>
+                    <div class="weekly__products-item ">
+                        <div class="weekly__products-item-title ">One Page Resume Template</div>
+                        <div class="weekly__products-item-author">
+                            <div class="weekly__products-item-user "></div>
+                            <div class="weekly__products-item-system "></div>
+                        </div>
+                        <div class="weekly__products-item-text ">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue
+                            justo ut scelerisque.</div>
 
-
-
-
+                        <div class="weekly__products-item-category "></div>
+                        <div class="weekly__products-item-rate">
+                            <div class="weekly__products-item-price">$10-$50</div>
+                        </div>
 
 
                     </div>
@@ -146,9 +161,9 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="js/libs.min.js "></script>
+    <script src="js/main.min.js "></script>
 </body>
 
 </html>
