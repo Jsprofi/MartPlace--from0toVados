@@ -391,17 +391,33 @@ body {
     min-height: 450px;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    position: relative; }
   .weekly__products-buttons {
-    position: relative;
+    position: absolute;
     width: 100%;
     margin: 0 auto;
-    height: 450px; }
+    height: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .weekly__products-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: white; }
+    color: white;
+    width: 130px;
+    height: 45px;
+    border: 1px solid;
+    -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    border-color: #f4f4f4;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 10px; }
   .weekly__products-images:hover {
     background-image: url("../images/BG-weekly1.png") !important;
     background-size: cover;
