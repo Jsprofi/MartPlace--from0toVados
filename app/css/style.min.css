@@ -343,7 +343,10 @@ body {
   height: 850px;
   background-color: #eff1f5; }
   .weekly__products-inner {
-    padding-top: 120px; }
+    padding-top: 120px;
+    -webkit-box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+            box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+    border-radius: 4px; }
   .weekly__products-title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -369,9 +372,9 @@ body {
     border-radius: 20px;
     margin-right: 30px; }
   .weekly__products-slider {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -380,11 +383,46 @@ body {
         -ms-flex-align: start;
             align-items: flex-start; }
   .weekly__products-images {
-    min-width: 570px;
+    min-width: 555px;
+    background-color: #4e5760;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 450px; }
+    min-height: 450px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative; }
+  .weekly__products-buttons {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    height: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .weekly__products-button {
+    color: white;
+    width: 130px;
+    height: 45px;
+    border: 1px solid;
+    -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    border-color: #f4f4f4;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 10px; }
+  .weekly__products-images:hover {
+    background-image: url("../images/BG-weekly1.png") !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
   .weekly__products-item {
     background-color: #fff;
     padding: 50px 50px 25px;
