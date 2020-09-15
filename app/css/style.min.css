@@ -267,7 +267,7 @@ body {
           width: 13px;
           height: 8px;
           right: 20px;
-          top: 16px;
+          top: 18px;
           outline: none;
           color: #555555; }
     .biginfo__search-btn {
@@ -380,11 +380,13 @@ body {
         -ms-flex-align: start;
             align-items: flex-start; }
   .weekly__products-images {
-    min-width: 570px;
+    max-width: 555px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 450px; }
+    .weekly__products-images:hover {
+      background-image: url(); }
   .weekly__products-item {
     background-color: #fff;
     padding: 50px 50px 25px;
