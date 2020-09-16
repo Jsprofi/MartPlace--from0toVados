@@ -347,6 +347,24 @@ body {
     -webkit-box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
             box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
     border-radius: 4px; }
+    .weekly__products-inner .slick-prev {
+      position: absolute;
+      top: -110px;
+      right: 90px;
+      background-color: #7347c1;
+      border: 0;
+      color: white; }
+      .weekly__products-inner .slick-prev:focus {
+        outline: none; }
+    .weekly__products-inner .slick-next {
+      position: absolute;
+      top: -110px;
+      right: 48px;
+      background-color: #7347c1;
+      border: 0;
+      color: white; }
+      .weekly__products-inner .slick-next:focus {
+        outline: none; }
   .weekly__products-title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -382,6 +400,11 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start; }
+    .weekly__products-slider .slick-arrows {
+      width: 8px;
+      height: 14px;
+      background-color: green;
+      outline: none; }
   .weekly__products-images {
     min-width: 555px;
     background-color: #4e5760;
@@ -418,6 +441,11 @@ body {
     border-radius: 20px;
     text-align: center;
     padding-top: 10px; }
+    .weekly__products-button:hover {
+      background-color: #fff;
+      color: #0674ec; }
+  .weekly__products-button + .weekly__products-button {
+    margin-left: 10px; }
   .weekly__products-images:hover {
     background-image: url("../images/BG-weekly1.png") !important;
     background-size: cover;
