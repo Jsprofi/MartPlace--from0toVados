@@ -35,7 +35,8 @@ body {
 
 .header__menu-item-link {
   display: inline-block;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #333; }
 
 .header__button {
   height: 35px;
@@ -45,7 +46,8 @@ body {
   padding: 9px 20px;
   margin-left: auto;
   margin-right: 30px;
-  color: #fff; }
+  color: #fff;
+  text-decoration: none; }
 
 .header__top-inner {
   display: -webkit-box;
@@ -415,35 +417,18 @@ body {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    position: relative; }
-    .weekly__products-images:hover-buttons {
-      position: absolute;
-      width: 100%;
-      margin: 0 auto;
-      height: 450px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-    .weekly__products-images:hover-button {
-      color: white;
-      width: 130px;
-      height: 45px;
-      border: 1px solid;
-      -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-              box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-      border-color: #f4f4f4;
-      border-radius: 20px;
-      text-align: center;
-      padding-top: 10px; }
-      .weekly__products-images:hover-button:hover {
-        background-color: #fff;
-        color: #0674ec; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .weekly__products-images .button__inner {
+      opacity: 0; }
+    .weekly__products-images:hover {
+      background-image: url("../images/content/newprod1.png"); }
+      .weekly__products-images:hover .button__inner {
+        opacity: 1; }
   .weekly__products-button + .weekly__products-button {
     margin-left: 10px; }
   .weekly__products-images:hover {
@@ -453,13 +438,13 @@ body {
     background-repeat: no-repeat; }
   .weekly__products-item {
     background-color: #fff;
-    padding: 50px 50px 25px;
+    padding: 50px 50px 20px;
     min-height: 450px; }
     .weekly__products-item-title {
       font-size: 24px;
       color: black;
       font-weight: 500;
-      margin-bottom: 15px; }
+      margin-bottom: 20px; }
     .weekly__products-item-author {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -470,7 +455,7 @@ body {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin-bottom: 30px; }
+      margin-bottom: 40px; }
     .weekly__products-item-avatar {
       width: 30px;
       height: 30px;
@@ -489,7 +474,7 @@ body {
       background-repeat: no-repeat;
       margin-right: 10px; }
     .weekly__products-item-text {
-      margin-bottom: 30px; }
+      margin-bottom: 40px; }
     .weekly__products-item-category {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -519,6 +504,10 @@ body {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
+      .weekly__products-item-rate .weekly__products-item-price,
+      .weekly__products-item-rate .lnr {
+        display: inline-block;
+        margin-right: 20px; }
     .weekly__products-item-price {
       background-color: #0674ec;
       border-radius: 16px;
@@ -548,11 +537,29 @@ body {
     -webkit-box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
             box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
     margin-bottom: 30px; }
+    .newest__products-title-inner .dropdown__list {
+      display: none; }
   .newest__products-title {
     margin-left: 30px;
     font-size: 30px; }
   .newest__products-filter {
-    margin-left: auto; }
+    margin-right: 60px;
+    font-size: 16px;
+    color: #747b86;
+    position: relative;
+    padding: 5px 0;
+    text-decoration: none; }
+    .newest__products-filter::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/icons/3dots.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 5px;
+      height: 20px;
+      top: 5px;
+      right: -30px; }
   .newest__products-menu {
     margin-bottom: 50px;
     background-color: white; }
@@ -614,29 +621,7 @@ body {
       .newest__products .product__item-img:hover {
         background-image: url("../images/content/newprod1.png"); }
         .newest__products .product__item-img:hover .button__inner {
-          opacity: 1;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center; }
-          .newest__products .product__item-img:hover .button__inner .button__item {
-            border: 1px solid white;
-            border-radius: 20px;
-            padding: 12px 30px;
-            color: white;
-            text-decoration: none; }
-            .newest__products .product__item-img:hover .button__inner .button__item + .button__item {
-              margin-left: 10px; }
-          .newest__products .product__item-img:hover .button__inner .button__item:hover {
-            color: #0674ec;
-            background-color: white;
-            font-size: 15px;
-            font-weight: 400; }
+          opacity: 1; }
     .newest__products .product__item-title {
       font-size: 20px;
       font-weight: 500;
@@ -714,3 +699,27 @@ body {
   background-color: #0674ec;
   color: white;
   text-decoration: none; }
+
+.button__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .button__inner .button__item {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 12px 30px;
+    color: white;
+    text-decoration: none; }
+    .button__inner .button__item + .button__item {
+      margin-left: 10px; }
+  .button__inner .button__item:hover {
+    color: #0674ec;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 400; }
