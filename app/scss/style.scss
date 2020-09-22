@@ -1044,9 +1044,25 @@
         }
     }
     
+    //start sale
     .container__fluid {
         max-width: 100%;
         margin: 0 auto;
-        padding: 0 30px;
-        height: 560px;
     }
+    
+    .sale {
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__item {
+            background-color: $button;
+            min-height: 560px;
+            padding: 0 30px;
+        }
+        &__item:last-child {
+            background-color: $violet;
+        }
+    }
+    
+    //end sale
