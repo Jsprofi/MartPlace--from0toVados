@@ -1045,24 +1045,158 @@
     }
     
     //start sale
-    .container__fluid {
-        max-width: 100%;
-        margin: 0 auto;
-    }
-    
     .sale {
+        .container__fluid {
+            max-width: 100%;
+            margin: 0 auto;
+        }
         &__inner {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
         }
         &__item {
             background-color: $button;
             min-height: 560px;
             padding: 0 30px;
+            text-align: center;
+            color: white;
+            &-icon {
+                padding: 100px 0 50px;
+            }
+            &-img {
+                width: 120px;
+                height: 100px;
+            }
+            &-title {
+                font-size: 36px;
+                padding-bottom: 35px;
+            }
+            &-text {
+                padding-bottom: 50px;
+            }
+        }
+        &__action {
+            color: $button;
+            background-color: white;
+            margin-bottom: 100px;
         }
         &__item:last-child {
             background-color: $violet;
+            .sale__action {
+                color: $violet;
+            }
+        }
+        &__img {
+            width: 120px;
+            height: 100px;
+        }
+        .bg-Shape_left {
+            width: 962px;
+            height: 343px;
+            background: url('../images/css_sprites.png') -0 -0;
+            // background-color: $button;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center bottom;
+        }
+        .bg-Shape_right {
+            width: 962px;
+            height: 343px;
+            background: url('../images/css_sprites.png') -962px -0;
+            // background-color: $violet;
+            background-repeat: no-repeat;
+            background-position: right bottom;
         }
     }
     
     //end sale
+    //start feedback
+    .feedback {
+        background-color: #fcfcfc;
+        &__inner {
+            text-align: center;
+        }
+        &__title {
+            font-size: 36px;
+            padding: 130px 0 40px;
+            span {
+                color: $button;
+            }
+        }
+        &__text {
+            max-width: 760px;
+            line-height: 30px;
+            align-items: center;
+            margin: 0 auto 65px;
+        }
+        &__item-inner {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 60px;
+        }
+        &__item {
+            background-color: #fff;
+            max-width: 555px;
+            width: 100%;
+            min-height: 315px;
+            padding: 50px 40px;
+            text-align: left;
+            border-left: 2px solid $button;
+            &-avatar {
+                margin-right: 20px;
+            }
+            &-author {
+                font-size: 20px;
+                color: black;
+                margin-bottom: 10px;
+            }
+            &-text {
+                line-height: 30px;
+            }
+            .lnr {
+                font-size: 60px;
+                color: #e8e8e8;
+                padding-bottom: 23px;
+            }
+            &-info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .feedback__authors-inner {
+                    margin-right: auto;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+        &__button {
+            margin: 0 auto 120px;
+        }
+    }
+    
+    //end feedback
+    //start news
+    .news {
+        height: 885px;
+        background-color: $grey;
+        text-align: center;
+        &__title {
+            font-size: 36px;
+            margin: 120px 0 26px;
+            color: black;
+            span {
+                color: $button;
+            }
+        }
+        &__text {
+            line-height: 30px;
+            margin-bottom: 60px;
+        }
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+        }
+    }
+    
+    //end news
