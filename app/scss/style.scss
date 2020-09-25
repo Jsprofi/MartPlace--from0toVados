@@ -1443,6 +1443,7 @@
             text-decoration: none;
             display: inline-block;
             color: #ababab;
+            @include clickable;
             &.lnr {
                 position: relative;
                 &::before {
@@ -1482,6 +1483,7 @@
                 display: inline-block;
                 width: 42px;
                 height: 42px;
+                @include clickable;
                 &+a {
                     margin-left: 13px;
                 }
@@ -1539,6 +1541,7 @@
                     border-radius: 24px;
                     top: 0;
                     right: 0;
+                    @include clickable;
                 }
             }
         }
