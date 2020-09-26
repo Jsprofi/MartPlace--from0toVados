@@ -8,6 +8,30 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
+html,
+body {
+  height: 100%; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%; }
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
+
+.footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
+
 body {
   background-color: white;
   color: #555555;
@@ -427,10 +451,10 @@ body {
     z-index: 2;
     background-color: #fff; }
 
-.product__properties {
+.product__benefit {
   background-color: #fafafa;
   min-height: 710px; }
-  .product__properties-item {
+  .product__benefit-item {
     width: 360px;
     height: 400px;
     text-align: center;
@@ -439,13 +463,13 @@ body {
     -o-transition: all .5s;
     transition: all .5s;
     overflow: hidden; }
-    .product__properties-item + .product__properties-item {
+    .product__benefit-item + .product__benefit-item {
       margin-left: 30px; }
-    .product__properties-item:hover {
+    .product__benefit-item:hover {
       background-color: #fff;
       -webkit-box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
               box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08); }
-  .product__properties-inner {
+  .product__benefit-inner {
     padding-top: 185px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -456,14 +480,14 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .product__properties-images {
+  .product__benefit-images {
     height: 159px;
     padding-bottom: 35px; }
-  .product__properties-title {
+  .product__benefit-title {
     color: #010101;
     font-size: 24px;
     padding-bottom: 30px; }
-  .product__properties-text {
+  .product__benefit-text {
     line-height: 30px; }
 
 .weekly__products {
@@ -1010,7 +1034,8 @@ body {
       margin-bottom: 20px;
       padding-left: 30px;
       display: block;
-      text-decoration: none; }
+      text-decoration: none;
+      color: black; }
     .followers__item-descr {
       margin-bottom: 30px;
       padding-left: 30px;

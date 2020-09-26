@@ -349,8 +349,8 @@
 }
 
 //end biginfo
-//start product properties
-.product__properties {
+//start product benefit
+.product__benefit {
   background-color: #fafafa;
   min-height: 710px;
   &-item {
@@ -929,7 +929,6 @@
         }
       }
     }
-    &-content {}
     &-title {
       font-size: 20px;
       font-weight: 500;
@@ -937,6 +936,7 @@
       padding-left: 30px;
       display: block;
       text-decoration: none;
+      color: black;
     }
     &-descr {
       margin-bottom: 30px;
