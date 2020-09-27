@@ -1514,7 +1514,8 @@ body {
       .footer__phone.lnr::before, .footer__mail.lnr::before {
         position: absolute;
         top: 0;
-        left: 0; }
+        left: 0;
+        color: white; }
   .footer__adress {
     display: inline-block;
     line-height: 26px;
@@ -1524,7 +1525,8 @@ body {
       .footer__adress.lnr::before {
         position: absolute;
         top: 12px;
-        left: 0; }
+        left: 0;
+        color: white; }
   .footer__list, .footer__social-item {
     list-style: none;
     padding: 0; }
