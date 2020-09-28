@@ -1,3 +1,32 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("./fonts/Quicksand-Light.woff") format("woff"), url("./fonts/Quicksand-Light.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("./fonts/Quicksand-Regular.woff") format("woff"), url("./fonts/Quicksand-Regular.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("./fonts/Quicksand-Medium.woff") format("woff"), url("./fonts/Quicksand-Medium.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("./fonts/Quicksand-Bold.woff") format("woff"), url("./fonts/Quicksand-Bold.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: 700;
+  font-style: normal; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -36,8 +65,7 @@ body {
   background-color: white;
   color: #555555;
   font-size: 16px;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400; }
+  font-family: "Quicksand-Regular"; }
 
 .container {
   max-width: 1170px;
