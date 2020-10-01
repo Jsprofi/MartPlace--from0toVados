@@ -1737,15 +1737,15 @@ body {
     .choose__item-text {
       line-height: 30px;
       padding-bottom: 15px; }
-    .choose__item:nth-child(2) .lnr {
+    .choose__item .lnr-magic-wand {
       color: #7f4ec2; }
-    .choose__item:nth-child(3) .lnr {
+    .choose__item .lnr-lock {
       color: #77de51; }
-    .choose__item:nth-child(4) .lnr {
+    .choose__item .lnr-chart-bars {
       color: #feb71d; }
-    .choose__item:nth-child(5) .lnr {
+    .choose__item .lnr-leaf {
       color: #58c9e9; }
-    .choose__item:last-child .lnr {
+    .choose__item .lnr-phone {
       color: #ff6a6d; }
 
 .sale .container__fluid {
@@ -1987,8 +1987,14 @@ body {
 .advantages__ico {
   text-align: center; }
 
-.advantages__item:first-child span {
+.advantages__item:first-child .advantages__title-link {
   color: #0674ec; }
+
+.advantages__item .advantages__title-link {
+  color: #7347c1; }
+
+.advantages__title-link {
+  text-decoration: none; }
 
 .join {
   background-image: url(../images/join-bg.png);
