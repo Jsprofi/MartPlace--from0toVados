@@ -980,10 +980,10 @@ body {
     z-index: 2;
     background-color: #fff; }
 
-.product__benefit {
+.benefits {
   background-color: #fafafa;
   min-height: 710px; }
-  .product__benefit-item {
+  .benefits__item {
     width: 360px;
     height: 400px;
     text-align: center;
@@ -992,13 +992,13 @@ body {
     -o-transition: all .5s;
     transition: all .5s;
     overflow: hidden; }
-    .product__benefit-item + .product__benefit-item {
+    .benefits__item + .benefits__item {
       margin-left: 30px; }
-    .product__benefit-item:hover {
+    .benefits__item:hover {
       background-color: #fff;
       -webkit-box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
               box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08); }
-  .product__benefit-inner {
+  .benefits__inner {
     padding-top: 185px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1009,14 +1009,14 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .product__benefit-images {
+  .benefits__images {
     height: 159px;
     padding-bottom: 35px; }
-  .product__benefit-title {
+  .benefits__title {
     color: #010101;
     font-size: 24px;
     padding-bottom: 30px; }
-  .product__benefit-text {
+  .benefits__text {
     line-height: 30px;
     height: 120px;
     overflow: hidden; }
@@ -1344,6 +1344,7 @@ body {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      border-radius: 4px;
       width: 360px;
       height: 230px;
       background-color: #009688;
@@ -2167,5 +2168,7 @@ body {
     color: #999999;
     line-height: 95px;
     height: 95px; }
-    .footer__copy-text span {
-      color: white; }
+
+.footer__copy-link {
+  text-decoration: none;
+  color: white; }
