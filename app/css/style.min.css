@@ -53,8 +53,7 @@ body {
 .header {
   background-color: #eef1f3; }
   .header__logo {
-    padding: 15px; }
-  .header__list-link {
+    padding: 15px;
     display: inline-block;
     text-decoration: none;
     color: #333; }
@@ -1535,40 +1534,40 @@ body {
       color: #ababab; }
   .footer__list-item {
     line-height: 32px; }
-  .footer__social-link {
+  .footer social-item {
     padding-left: 0; }
-    .footer__social-link a {
+    .footer social-item a {
       display: inline-block;
       width: 42px;
       height: 42px; }
-      .footer__social-link a:hover {
+      .footer social-item a:hover {
         border-radius: 3px;
         -webkit-box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
                 box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
         color: tomato; }
-      .footer__social-link a:focus {
+      .footer social-item a:focus {
         color: yellowgreen; }
-      .footer__social-link a:active {
+      .footer social-item a:active {
         background-color: #66ff00; }
-      .footer__social-link a + a {
+      .footer social-item a + a {
         margin-left: 13px; }
-  .footer__social {
+  .footer .social {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
-    .footer__social-item {
+    .footer .social .social-item {
       display: inline-block; }
-    .footer__social-fb {
+    .footer .social__fb {
       background-image: url(../images/social1.png); }
-    .footer__social-twitter {
+    .footer .social-twitter {
       background-image: url(../images/social2.png); }
-    .footer__social-google {
+    .footer .social-google {
       background-image: url(../images/social3.png); }
-    .footer__social-xz {
+    .footer .social-xz {
       background-image: url(../images/social4.png); }
-    .footer__social-pinterest {
+    .footer .social-pinterest {
       background-image: url(../images/social5.png); }
-    .footer__social-dribbble {
+    .footer .social-dribbble {
       background-image: url(../images/social6.png); }
   .footer .search__form {
     max-width: 360px;
@@ -1622,3 +1621,18 @@ body {
     height: 95px; }
     .footer__copy-text span {
       color: white; }
+
+.search {
+  background-image: url(../images/newitems-search.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 280px; }
+  .search__title {
+    color: #f1f3f6;
+    font-size: 26px;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 35px; }
+    .search__title span {
+      font-weight: 700; }

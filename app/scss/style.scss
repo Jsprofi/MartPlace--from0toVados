@@ -12,8 +12,6 @@
   background-color: $header_color;
   &__logo {
     padding: 15px;
-  }
-  &__list-link {
     display: inline-block;
     text-decoration: none;
     color: #333;
@@ -1481,7 +1479,7 @@
   &__list-item {
     line-height: 32px;
   }
-  &__social-link {
+  social-item {
     padding-left: 0;
     a {
       display: inline-block;
@@ -1493,14 +1491,14 @@
       }
     }
   }
-  &__social {
+  .social {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    &-item {
+    .social-item {
       display: inline-block;
     }
-    &-fb {
+    &__fb {
       background-image: url(../images/social1.png);
     }
     &-twitter {
@@ -1565,3 +1563,24 @@
 }
 
 //end footer
+//start new-item-page
+//start search
+.search {
+  background-image: url(../images/newitems-search.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 280px;
+  &__title {
+    color: $grey-button;
+    font-size: 26px;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 35px;
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+//end search
