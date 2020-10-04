@@ -1,13 +1,6 @@
 @import 'fonts';
 @import 'vars';
 @import 'global';
-.header__menu-list,
-.header__menu-item {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .header {
   background-color: $header_color;
   &__logo {
@@ -39,15 +32,15 @@
     height: 100px;
   }
   &__info-box {
-    margin-right: 50px;
-    .lnr {
+    margin-right: 35px;
+    .header__info-item {
       display: inline-block;
-      font-size: 30px;
+      font-size: 20px;
     }
     span {
       font-size: 14px;
       position: absolute;
-      top: -9px;
+      top: -15px;
       right: -12px;
       color: white;
       border-radius: 50%;
@@ -67,7 +60,7 @@
       text-decoration: none;
       color: #7e8fa1;
       &+.header__info-item {
-        margin-left: 35px;
+        margin-left: 30px;
       }
     }
   }
@@ -114,7 +107,7 @@
     .header-link {
       font-size: 15px;
       color: #333333;
-      font-weight: 400;
+      font-weight: 500;
       @include clickable;
       transition: all 0.4s;
       text-decoration: none;
@@ -122,46 +115,46 @@
   }
   .header__menu {
     background-color: #fff;
-  }
-  .header__menu-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-  }
-  .search__form {
-    max-width: 350px;
-    width: 100%;
-    position: relative;
-    @include clickable;
-    &-input {
-      display: block;
+    .header__menu-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+    }
+    .search__form {
+      max-width: 350px;
       width: 100%;
-      border-radius: 24px;
-      border: 1px solid $border;
-      outline: none;
-      padding-left: 25px;
-      padding-right: 80px;
-      height: 46px;
-      &::placeholder {
-        color: #898f96;
-      }
-    }
-    &-menu {
-      position: absolute;
-      z-index: 5;
-    }
-    &-button {
-      position: absolute;
-      padding: 0;
-      top: 0px;
-      right: -6px;
-      border: none;
-      background-color: transparent;
-      outline: none;
-      height: 45px;
-      background-size: cover;
+      position: relative;
       @include clickable;
+      &-input {
+        display: block;
+        width: 100%;
+        border-radius: 24px;
+        border: 1px solid $border;
+        outline: none;
+        padding-left: 25px;
+        padding-right: 80px;
+        height: 46px;
+        &::placeholder {
+          color: #898f96;
+        }
+      }
+      &-menu {
+        position: absolute;
+        z-index: 5;
+      }
+      &-button {
+        position: absolute;
+        padding: 0;
+        top: 0px;
+        right: -6px;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        height: 45px;
+        background-size: cover;
+        @include clickable;
+      }
     }
   }
 }
@@ -499,6 +492,7 @@
     &-user {
       margin-right: 25px;
       color: black;
+      text-decoration: none;
     }
     &-cms {
       width: 13px;
@@ -507,6 +501,9 @@
       background-position: center;
       background-repeat: no-repeat;
       margin-right: 10px;
+    }
+    &-system {
+      text-decoration: none;
     }
     &-text {
       margin-bottom: 30px;
@@ -530,6 +527,10 @@
         border-radius: 16px;
         text-decoration: none;
         color: #868c96;
+        &:hover {
+          background-color: $button;
+          color: white;
+        }
       }
     }
     &-rate {
@@ -824,6 +825,7 @@
   &__top {
     padding-top: 120px;
     &-inner {
+      position: relative;
       height: 110px;
       background-color: #fff;
       border-radius: 4px;
@@ -839,47 +841,51 @@
       padding-left: 30px;
     }
   }
-  &__slider-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 120px;
-    .slick-prev {
-      position: absolute;
-      padding: 0;
-      top: -120px;
-      right: 90px;
-      background-color: #7347c1;
-      ;
-      border: 0;
-      color: white;
-      width: 55px;
-      height: 45px;
-      border-radius: 20px 0 0 20px;
-      &:focus {
-        outline: none;
-      }
-      &:hover {
-        background-color: $button;
-      }
+  .slick-prev {
+    position: absolute;
+    padding: 0;
+    top: 32px;
+    right: 77px;
+    background-color: #7347c1;
+    border: 0;
+    color: white;
+    width: 55px;
+    height: 45px;
+    border-radius: 20px 0 0 20px;
+    &:focus {
+      outline: none;
     }
-    .slick-next {
-      position: absolute;
-      padding: 0;
-      top: -120px;
-      right: 35px;
-      background-color: #7347c1;
-      border: 0;
-      color: white;
-      width: 55px;
-      height: 45px;
-      border-radius: 0 20px 20px 0;
-      &:focus {
-        outline: none;
-      }
-      &:hover {
-        background-color: $button;
-      }
+    &:hover {
+      background-color: $button;
+    }
+  }
+  .slick-next {
+    position: absolute;
+    padding: 0;
+    top: 32px;
+    right: 22px;
+    background-color: #7347c1;
+    border: 0;
+    color: white;
+    width: 55px;
+    height: 45px;
+    border-radius: 0 20px 20px 0;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      background-color: $button;
+    }
+  }
+  &__slider-inner {
+    position: relative;
+    padding-bottom: 120px;
+    overflow: hidden;
+    .slick-list {
+      margin-left: -30px;
+    }
+    .slick-slide {
+      margin-left: 30px;
     }
   }
   &__item {
@@ -1004,16 +1010,16 @@
     min-height: 180px;
     padding: 100px 0;
     text-align: center;
-    &:first-child {
+    &.orange {
       color: #feb71d;
     }
-    &:nth-child(2) {
+    &.blue {
       color: #58c9e9;
     }
-    &:nth-child(3) {
+    &.green {
       color: #77de51;
     }
-    &:last-child {
+    &.tomato {
       color: #ff6a6d;
     }
     &-image {
@@ -1351,7 +1357,7 @@
 .advantages {
   &__inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 300px;
     font-size: 24px;
     padding-top: 60px;
@@ -1479,14 +1485,14 @@
   }
   &__social-link {
     padding-left: 0;
+    li+li {
+      margin-left: 13px;
+    }
     a {
       display: inline-block;
       width: 42px;
       height: 42px;
       @include clickable;
-      &+a {
-        margin-left: 13px;
-      }
     }
   }
   &__social {
