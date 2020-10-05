@@ -284,7 +284,7 @@
             white-space: nowrap;
         }
     }
-    &::after {
+    &__search::after {
         position: absolute;
         bottom: 51px;
         width: 1110px;
@@ -995,7 +995,7 @@
         justify-content: space-between;
         align-items: center;
     }
-    &__item {
+    .stats-item {
         max-width: 180px;
         width: 100%;
         min-height: 180px;
@@ -1013,16 +1013,16 @@
         &.tomato {
             color: #ff6a6d;
         }
-        &-image {
+        &__image {
             font-size: 48px;
             margin-bottom: 50px;
         }
-        &-number {
+        &__number {
             font-size: 36px;
             line-height: 36px;
             margin-bottom: 20px;
         }
-        &-text {
+        &__text {
             font-size: 18px;
             color: white;
         }

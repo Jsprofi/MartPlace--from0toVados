@@ -969,7 +969,7 @@ body {
         color: #4232cd; }
       .create-product__search-btn:active {
         background-color: #66ff00; }
-  .create-product::after {
+  .create-product__search::after {
     position: absolute;
     bottom: 51px;
     width: 1110px;
@@ -1660,28 +1660,28 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .stats__item {
+  .stats .stats-item {
     max-width: 180px;
     width: 100%;
     min-height: 180px;
     padding: 100px 0;
     text-align: center; }
-    .stats__item.orange {
+    .stats .stats-item.orange {
       color: #feb71d; }
-    .stats__item.blue {
+    .stats .stats-item.blue {
       color: #58c9e9; }
-    .stats__item.green {
+    .stats .stats-item.green {
       color: #77de51; }
-    .stats__item.tomato {
+    .stats .stats-item.tomato {
       color: #ff6a6d; }
-    .stats__item-image {
+    .stats .stats-item__image {
       font-size: 48px;
       margin-bottom: 50px; }
-    .stats__item-number {
+    .stats .stats-item__number {
       font-size: 36px;
       line-height: 36px;
       margin-bottom: 20px; }
-    .stats__item-text {
+    .stats .stats-item__text {
       font-size: 18px;
       color: white; }
 
