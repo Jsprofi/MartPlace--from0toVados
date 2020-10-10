@@ -873,7 +873,7 @@
   }
   &__slider-inner {
     position: relative;
-    padding-bottom: 80px;
+    padding-bottom: 90px;
     overflow: hidden;
     .slick-list {
       margin-left: -30px;
@@ -1001,7 +1001,7 @@
   .stats-item {
     max-width: 180px;
     min-height: 180px;
-    padding: 100px 0;
+    padding: 90px 0;
     text-align: center;
     &.orange {
       color: #feb71d;
@@ -1017,12 +1017,12 @@
     }
     &__image {
       font-size: 48px;
-      margin-bottom: 50px;
+      margin-bottom: 45px;
     }
     &__number {
       font-size: 36px;
       line-height: 36px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
     &__text {
       font-size: 18px;
@@ -1038,7 +1038,7 @@
   height: 1185px;
   background-color: #f4f4f4;
   &__title {
-    padding: 120px 0 40px;
+    padding: 112px 0 22px;
     font-size: 36px;
     text-align: center;
     & span {
@@ -1047,8 +1047,10 @@
   }
   &__text {
     line-height: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 55px;
+    margin: 0 auto;
     text-align: center;
+    max-width: 675px;
   }
   &__inner {
     display: flex;
@@ -1060,7 +1062,7 @@
     max-width: 360px;
     border-radius: 4px;
     box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
-    min-height: 400px;
+    min-height: 370px;
     text-align: center;
     padding: 20px;
     margin-bottom: 30px;
@@ -1080,11 +1082,11 @@
     &-icon {
       font-size: 60px;
       color: $button;
-      margin-bottom: 50px;
+      margin-bottom: 42px;
     }
     &-title {
       font-size: 24px;
-      margin-bottom: 35px;
+      margin-bottom: 20px;
     }
     &-text {
       line-height: 30px;
@@ -1125,7 +1127,7 @@
     text-align: center;
     color: white;
     &-icon {
-      padding: 107px 0 40px;
+      padding: 100px 0 40px;
     }
     &-img {
       width: 120px;
@@ -1133,14 +1135,15 @@
     }
     &-title {
       font-size: 36px;
-      padding-bottom: 35px;
+      padding-bottom: 25px;
     }
     &-text {
       padding-bottom: 68px;
-      width: 590px;
+      max-width: 590px;
       font-size: 16px;
       font-weight: 500;
       margin: 0 auto;
+      line-height: 25px;
     }
   }
   &__action {
@@ -1188,7 +1191,7 @@
   }
   &__title {
     font-size: 36px;
-    padding: 110px 0 20px;
+    padding: 114px 0 20px;
     span {
       color: $button;
     }
@@ -1202,14 +1205,14 @@
   &__item-inner {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 78px;
   }
   &__item {
     background-color: #fff;
     max-width: 555px;
     width: 100%;
     min-height: 315px;
-    padding: 50px 40px;
+    padding: 47px 40px;
     text-align: left;
     border-left: 2px solid $button;
     &-avatar {
@@ -1232,6 +1235,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-bottom: 20px;
       .feedback__authors-inner {
         margin-right: auto;
         display: flex;
@@ -1261,9 +1265,11 @@
   }
   &__text {
     line-height: 30px;
-    margin-bottom: 60px;
+    margin: 0 auto;
+    max-width: 670px;
   }
   &__inner {
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     text-align: left;
@@ -1306,12 +1312,13 @@
       display: block;
       text-decoration: none;
       color: black;
+      padding-top: 15px;
     }
     &-text {
       color: #555555;
       font-size: 16px;
       padding-left: 30px;
-      padding-bottom: 35px;
+      padding-bottom: 30px;
       line-height: 30px;
       overflow: hidden;
     }
@@ -1361,7 +1368,7 @@
   }
   &__img {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
   &__ico {
     text-align: center;
@@ -1393,10 +1400,11 @@
   color: white;
   &__title {
     font-size: 36px;
-    padding: 100px 0 35px;
+    padding: 100px 0 20px;
   }
   &__text {
     padding-bottom: 55px;
+    font-size: 18px;
   }
   &__button {
     display: block;
