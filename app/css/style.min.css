@@ -1710,7 +1710,7 @@ body {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-  .choose__item {
+  .choose .choose-item {
     max-width: 360px;
     border-radius: 4px;
     -webkit-box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
@@ -1723,35 +1723,35 @@ body {
     -o-transition: all .5s;
     transition: all .5s;
     overflow: hidden; }
-    .choose__item:hover {
+    .choose .choose-item:hover {
       background-color: #fff;
       -webkit-box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
               box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08); }
-    .choose__item-number {
+    .choose .choose-item__number {
       text-align: start;
       font-size: 48px;
       color: rgba(92, 135, 248, 0.2);
       font-weight: 300;
       line-height: 28px; }
-    .choose__item-icon {
+    .choose .choose-item__icon {
       font-size: 60px;
       color: #0674ec;
       margin-bottom: 50px; }
-    .choose__item-title {
+    .choose .choose-item__title {
       font-size: 24px;
       margin-bottom: 35px; }
-    .choose__item-text {
+    .choose .choose-item__text {
       line-height: 30px;
       padding-bottom: 15px; }
-    .choose__item .lnr-magic-wand {
+    .choose .choose-item .lnr-magic-wand {
       color: #7f4ec2; }
-    .choose__item .lnr-lock {
+    .choose .choose-item .lnr-lock {
       color: #77de51; }
-    .choose__item .lnr-chart-bars {
+    .choose .choose-item .lnr-chart-bars {
       color: #feb71d; }
-    .choose__item .lnr-leaf {
+    .choose .choose-item .lnr-leaf {
       color: #58c9e9; }
-    .choose__item .lnr-phone {
+    .choose .choose-item .lnr-phone {
       color: #ff6a6d; }
 
 .sale .container__fluid {

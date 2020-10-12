@@ -1054,7 +1054,7 @@
         align-items: center;
         flex-wrap: wrap;
     }
-    &__item {
+    .choose-item {
         max-width: 360px;
         border-radius: 4px;
         box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
@@ -1068,23 +1068,23 @@
             background-color: #fff;
             box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
         }
-        &-number {
+        &__number {
             text-align: start;
             font-size: 48px;
             color: rgba(92, 135, 248, 0.2);
             font-weight: 300;
             line-height: 28px;
         }
-        &-icon {
+        &__icon {
             font-size: 60px;
             color: $button;
             margin-bottom: 50px;
         }
-        &-title {
+        &__title {
             font-size: 24px;
             margin-bottom: 35px;
         }
-        &-text {
+        &__text {
             line-height: 30px;
             padding-bottom: 15px;
         }
