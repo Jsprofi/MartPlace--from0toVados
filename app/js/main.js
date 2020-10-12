@@ -1,6 +1,6 @@
 $(function() {
 
-  var mixer = mixitup('.newest__products-slider-inner');
+  var mixer = mixitup('.newest-products__slider-inner');
 
   $(".rate-star").rateYo({
     rating: 3.6,

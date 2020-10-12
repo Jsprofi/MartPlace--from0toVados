@@ -211,29 +211,29 @@
             margin-left: 30px;
         }
     }
-    &__search {
+    .search {
         position: absolute;
-        bottom: -68px;
+        bottom: -66px;
         left: 0;
         right: 0;
         width: 1140px;
         height: 136px;
         margin: 0 auto;
-        background-color: #fff;
+        background: white;
         border-radius: 4px;
         box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
         z-index: 3;
-        &-box {
+        &__box {
             width: 100%;
             height: 56px;
-            padding: 45px 40px;
+            padding: 40px;
             border-radius: 4px;
-            .biginfo__search-dropdown-styled {
+            .search__dropdown-styled {
                 max-width: 195px;
                 width: 100%;
                 margin-right: auto;
                 position: relative;
-                .biginfo__search-dropdown {
+                .search__dropdown {
                     text-decoration: none;
                     border: 1px solid #dcdcdc;
                     border-left: 0;
@@ -257,12 +257,12 @@
                 }
             }
         }
-        &-form {
+        &__form {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        &-input {
+        &__input {
             border-radius: 4px 0 0 4px;
             width: 610px;
             height: 56px;
@@ -270,7 +270,7 @@
             outline: none;
             padding-left: 30px;
         }
-        &-btn {
+        &__btn {
             @include clickable;
             background-color: $button;
             border-radius: 4px;
@@ -284,9 +284,10 @@
             white-space: nowrap;
         }
     }
-    &__search::after {
+    &::after {
+        content: "";
         position: absolute;
-        bottom: 51px;
+        bottom: 54px;
         width: 1110px;
         height: 30px;
         left: 0;
@@ -298,8 +299,9 @@
         z-index: 2;
     }
     &::before {
+        content: "";
         position: absolute;
-        bottom: 64px;
+        bottom: 66px;
         width: 1080px;
         height: 30px;
         left: 0;
@@ -343,6 +345,8 @@
         height: 159px;
         // // display: inline-block;
         padding-bottom: 35px;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     &__title {
         color: #010101;
@@ -365,6 +369,7 @@
         padding-top: 120px;
         box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
         border-radius: 4px;
+        position: relative;
         .slick-prev {
             position: absolute;
             padding: 0;
@@ -546,14 +551,14 @@
 
 //end weekly__products
 //start newest_products
-.newest__products {
+.newest-products {
     padding-top: 120px;
     background-color: #f6f7fb;
-    &-item {
+    &__item {
         border-radius: 4px;
         box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
     }
-    &-title-inner {
+    &__title-inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -563,14 +568,14 @@
         box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
         margin-bottom: 30px;
     }
-    &-title {
+    &__title {
         margin-left: 30px;
         font-size: 30px;
     }
-    &-filter {
+    &__filter {
         position: relative;
         margin-right: 30px;
-        .dropdown__list {
+        .dropdown {
             display: none;
         }
         & .filter-link {
@@ -626,11 +631,11 @@
             }
         }
     }
-    &-menu {
+    &__menu {
         margin-bottom: 50px;
         background-color: white;
     }
-    &-list {
+    &__list {
         display: flex;
         justify-content: start;
         align-items: center;
@@ -639,28 +644,28 @@
         height: 90px;
         border-radius: 4px;
         box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
-        &item {
-            margin-left: 10px;
-            background-color: $grey-button;
-            color: #747b86;
-            border: 1px solid white;
-            border-radius: 15px;
-            padding: 5px 20px;
-            font-size: 15px;
-            transition: all 0.5s;
-            outline: none;
-        }
-        &item:hover {
+    }
+    &__item {
+        margin-left: 10px;
+        background-color: $grey-button;
+        color: #747b86;
+        border: 1px solid white;
+        border-radius: 15px;
+        padding: 5px 20px;
+        font-size: 15px;
+        transition: all 0.5s;
+        outline: none;
+        &:hover {
             background-color: $button;
             color: white;
         }
     }
-    &-allnews {
+    &__allnews {
         padding-top: 47px;
-        padding-bottom: 120px;
+        padding-bottom: 140px;
         text-align: center;
     }
-    &-slider-inner {
+    &__slider-inner {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -781,8 +786,8 @@
     width: 190px;
     height: 55px;
     font-size: 16px;
-    padding: 18px 32px;
-    border-radius: 25px;
+    padding: 20px 40px;
+    border-radius: 30px;
     background-color: $button;
     color: white;
     text-decoration: none;
@@ -870,7 +875,7 @@
     }
     &__slider-inner {
         position: relative;
-        padding-bottom: 120px;
+        padding-bottom: 90px;
         overflow: hidden;
         .slick-list {
             margin-left: -30px;
@@ -997,9 +1002,8 @@
     }
     .stats-item {
         max-width: 180px;
-        width: 100%;
         min-height: 180px;
-        padding: 100px 0;
+        padding: 90px 0;
         text-align: center;
         &.orange {
             color: #feb71d;
@@ -1015,12 +1019,12 @@
         }
         &__image {
             font-size: 48px;
-            margin-bottom: 50px;
+            margin-bottom: 45px;
         }
         &__number {
             font-size: 36px;
             line-height: 36px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         &__text {
             font-size: 18px;
@@ -1036,7 +1040,7 @@
     height: 1185px;
     background-color: #f4f4f4;
     &__title {
-        padding: 120px 0 40px;
+        padding: 112px 0 22px;
         font-size: 36px;
         text-align: center;
         & span {
@@ -1045,8 +1049,10 @@
     }
     &__text {
         line-height: 30px;
-        padding-bottom: 60px;
+        padding-bottom: 55px;
+        margin: 0 auto;
         text-align: center;
+        max-width: 675px;
     }
     &__inner {
         display: flex;
@@ -1054,11 +1060,11 @@
         align-items: center;
         flex-wrap: wrap;
     }
-    .choose-item {
+    &__item {
         max-width: 360px;
         border-radius: 4px;
         box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
-        min-height: 400px;
+        min-height: 370px;
         text-align: center;
         padding: 20px;
         margin-bottom: 30px;
@@ -1068,23 +1074,23 @@
             background-color: #fff;
             box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
         }
-        &__number {
+        &-number {
             text-align: start;
             font-size: 48px;
             color: rgba(92, 135, 248, 0.2);
             font-weight: 300;
             line-height: 28px;
         }
-        &__icon {
+        &-icon {
             font-size: 60px;
             color: $button;
-            margin-bottom: 50px;
+            margin-bottom: 42px;
         }
-        &__title {
+        &-title {
             font-size: 24px;
-            margin-bottom: 35px;
+            margin-bottom: 20px;
         }
-        &__text {
+        &-text {
             line-height: 30px;
             padding-bottom: 15px;
         }
@@ -1123,7 +1129,7 @@
         text-align: center;
         color: white;
         &-icon {
-            padding: 100px 0 50px;
+            padding: 100px 0 40px;
         }
         &-img {
             width: 120px;
@@ -1131,10 +1137,15 @@
         }
         &-title {
             font-size: 36px;
-            padding-bottom: 35px;
+            padding-bottom: 25px;
         }
         &-text {
-            padding-bottom: 50px;
+            padding-bottom: 68px;
+            max-width: 590px;
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0 auto;
+            line-height: 25px;
         }
     }
     &__action {
@@ -1182,28 +1193,28 @@
     }
     &__title {
         font-size: 36px;
-        padding: 130px 0 40px;
+        padding: 114px 0 20px;
         span {
             color: $button;
         }
     }
     &__text {
-        max-width: 760px;
+        max-width: 710px;
         line-height: 30px;
         align-items: center;
-        margin: 0 auto 65px;
+        margin: 0 auto 54px;
     }
     &__item-inner {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 60px;
+        margin-bottom: 78px;
     }
     &__item {
         background-color: #fff;
         max-width: 555px;
         width: 100%;
         min-height: 315px;
-        padding: 50px 40px;
+        padding: 47px 40px;
         text-align: left;
         border-left: 2px solid $button;
         &-avatar {
@@ -1226,6 +1237,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 20px;
             .feedback__authors-inner {
                 margin-right: auto;
                 display: flex;
@@ -1255,9 +1267,11 @@
     }
     &__text {
         line-height: 30px;
-        margin-bottom: 60px;
+        margin: 0 auto;
+        max-width: 670px;
     }
     &__inner {
+        margin-top: 50px;
         display: flex;
         justify-content: space-between;
         text-align: left;
@@ -1300,12 +1314,13 @@
             display: block;
             text-decoration: none;
             color: black;
+            padding-top: 15px;
         }
         &-text {
             color: #555555;
             font-size: 16px;
             padding-left: 30px;
-            padding-bottom: 35px;
+            padding-bottom: 30px;
             line-height: 30px;
             overflow: hidden;
         }
@@ -1355,7 +1370,7 @@
     }
     &__img {
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
     }
     &__ico {
         text-align: center;
@@ -1387,10 +1402,11 @@
     color: white;
     &__title {
         font-size: 36px;
-        padding: 100px 0 35px;
+        padding: 100px 0 20px;
     }
     &__text {
         padding-bottom: 55px;
+        font-size: 18px;
     }
     &__button {
         display: block;

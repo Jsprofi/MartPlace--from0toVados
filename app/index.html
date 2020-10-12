@@ -83,20 +83,20 @@
                         <a class="create-product__button" href="#">Popular Products</a>
 
                     </div>
-                    <div class="create-product__search">
-                        <div class="create-product__search-box">
-                            <form class="create-product__search-form">
+                    <div class="search">
+                        <div class="search__box">
+                            <form class="search__form">
                                 <label class="label">
-<input class="biginfo__search-input" type="search" placeholder="Search your products..." required>
+<input class="search__input" type="search" placeholder="Search your products..." required>
 </label>
-                                <div class="biginfo__search-dropdown-styled">
-                                    <select class="biginfo__search-dropdown">
+                                <div class="search__dropdown-styled">
+                                    <select class="search__dropdown">
 <option >All Categories</option>
 <option >Joomla</option>
 <option >Bitrix</option>
 </select>
                                 </div>
-                                <button class="biginfo__search-btn" type="search">Search Now </button>
+                                <button class="search__btn" type="search">Search Now </button>
                             </form>
                         </div>
                     </div>
@@ -110,19 +110,19 @@
             <div class="container">
                 <div class="benefits__inner">
                     <div class="benefits__item">
-                        <div class="benefits__images"><img src="images/icons/research.png" alt="UX Research"></div>
+                        <div class="benefits__images" style="background-image: url(images/icons/research.png);" alt="UX Research"></div>
                         <div class="benefits__title">Best UX Research</div>
                         <div class="benefits__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
                     </div>
 
                     <div class="benefits__item">
-                        <div class="benefits__images"><img src="images/icons/responsive.png" alt="Fully Responsive"></div>
+                        <div class="benefits__images" style="background-image: url(images/icons/responsive.png);" alt="Fully Responsive"></div>
                         <div class="benefits__title">Fully Responsive</div>
                         <div class="benefits__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
                     </div>
 
                     <div class="benefits__item">
-                        <div class="benefits__images"><img src="images/icons/buysell.png" alt="Buy & Sell Easily"></div>
+                        <div class="benefits__images" style="background-image: url(images/icons/buysell.png);" alt="Buy & Sell Easily"></div>
                         <div class="benefits__title">Buy & Sell Easily</div>
                         <div class="benefits__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
                     </div>
@@ -218,14 +218,14 @@
 
         </section>
 
-        <section class="newest__products">
+        <section class="newest-products">
             <div class="container">
-                <div class="newest__products-title-inner">
-                    <div class="newest__products-title">Newest Release Products</div>
-                    <div class="newest__products-filter dropdown-down">
+                <div class="newest-products__title-inner">
+                    <div class="newest-products__title">Newest Release Products</div>
+                    <div class="newest-products__filter dropdown-down">
                         <!-- <a class="filter-link" href="">Filter by</a> -->
                         <button class="filter-link">Filter by</button>
-                        <ul class="dropdown__list">
+                        <ul class="dropdown">
                             <li class="li">
                                 <a class="dropdown-down" href="">Trending items</a>
                             </li>
@@ -244,20 +244,20 @@
                         </ul>
                     </div>
                 </div>
-                <div class="newest__products-menu">
-                    <div class="newest__products-list">
-                        <button type="button" class="newest__products-listitem" data-filter=".category-wp">WordPress</button>
-                        <button type="button" class="newest__products-listitem">Site Template</button>
-                        <button type="button" class="newest__products-listitem" data-filter=".category-psd">PSD Template</button>
-                        <button type="button" class="newest__products-listitem">Joomla</button>
-                        <button type="button" class="newest__products-listitem">User Interface</button>
-                        <button type="button" class="newest__products-listitem" data-filter=".category-html">Landing Page</button>
-                        <button type="button" class="newest__products-listitem" data-filter="all">Software</button>
-                        <button type="button" class="newest__products-listitem" data-filter=".category-plugin">Plugins</button>
+                <div class="newest-products__menu">
+                    <div class="newest-products__list">
+                        <button type="button" class="newest-products__item" data-filter=".category-wp">WordPress</button>
+                        <button type="button" class="newest-products__item">Site Template</button>
+                        <button type="button" class="newest-products__item" data-filter=".category-psd">PSD Template</button>
+                        <button type="button" class="newest-products__item">Joomla</button>
+                        <button type="button" class="newest-products__item">User Interface</button>
+                        <button type="button" class="newest-products__item" data-filter=".category-html">Landing Page</button>
+                        <button type="button" class="newest-products__item" data-filter="all">Software</button>
+                        <button type="button" class="newest-products__item" data-filter=".category-plugin">Plugins</button>
                     </div>
                 </div>
-                <div class="newest__products-slider">
-                    <div class="newest__products-slider-inner ">
+                <div class="newest-products__slider">
+                    <div class="newest-products__slider-inner ">
                         <div class="product__item mix category-plugin category-wp">
                             <div class="product__item-img" href="#">
                                 <div class="button__inner">
@@ -434,7 +434,7 @@
 
 
                     </div>
-                    <div class="newest__products-allnews"><a class="newest__products-allnews button190" href="">All New Products</a> </div>
+                    <div class="newest-products__allnews"><a class="newest-products__allnews button190" href="">All New Products</a> </div>
         </section>
 
         <section class="followers">
@@ -640,12 +640,12 @@
                     <div class="stats-item green">
                         <div class="stats-item__image lnr lnr-smile"></div>
                         <div class="stats-item__number ">2,736</div>
-                        <div class="stats-item__text">items for sale</div>
+                        <div class="stats-item__text">happy customers</div>
                     </div>
                     <div class="stats-item tomato">
                         <div class="stats-item__image lnr lnr-users"></div>
                         <div class="stats-item__number ">25,736</div>
-                        <div class="stats-item__text">items for sale</div>
+                        <div class="stats-item__text">members</div>
                     </div>
 
 
@@ -660,46 +660,46 @@
                 <div class="choose__text">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.</div>
                 <div class="choose__inner">
 
-                    <div class="choose-item">
-                        <div class="choose-item__number">01</div>
-                        <div class="choose-item__icon lnr lnr-license"></div>
-                        <div class="choose-item__title">One Time Payment</div>
-                        <div class="choose-item__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
+                    <div class="choose__item">
+                        <div class="choose__item-number">01</div>
+                        <div class="choose__item-icon lnr lnr-license"></div>
+                        <div class="choose__item-title">One Time Payment</div>
+                        <div class="choose__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
                     </div>
 
-                    <div class="choose-item">
-                        <div class="choose-item__number">02</div>
-                        <div class="choose-item__icon lnr lnr-magic-wand"></div>
-                        <div class="choose-item__title">Quality Products</div>
-                        <div class="choose-item__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
+                    <div class="choose__item">
+                        <div class="choose__item-number">02</div>
+                        <div class="choose__item-icon lnr lnr-magic-wand"></div>
+                        <div class="choose__item-title">Quality Products</div>
+                        <div class="choose__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
                     </div>
 
-                    <div class="choose-item">
-                        <div class="choose-item__number">03</div>
-                        <div class="choose-item__icon lnr lnr-lock"></div>
-                        <div class="choose-item__title">100% Secure Payment</div>
-                        <div class="choose-item__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
+                    <div class="choose__item">
+                        <div class="choose__item-number">03</div>
+                        <div class="choose__item-icon lnr lnr-lock"></div>
+                        <div class="choose__item-title">100% Secure Payment</div>
+                        <div class="choose__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
                     </div>
 
-                    <div class="choose-item">
-                        <div class="choose-item__number">04</div>
-                        <div class="choose-item__icon lnr lnr-chart-bars"></div>
-                        <div class="choose-item__title">Well Organized Code</div>
-                        <div class="choose-item__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
+                    <div class="choose__item">
+                        <div class="choose__item-number">04</div>
+                        <div class="choose__item-icon lnr lnr-chart-bars"></div>
+                        <div class="choose__item-title">Well Organized Code</div>
+                        <div class="choose__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
                     </div>
 
-                    <div class="choose-item">
-                        <div class="choose-item__number">05</div>
-                        <div class="choose-item__icon lnr lnr-leaf"></div>
-                        <div class="choose-item__title">Life Time Free Update</div>
-                        <div class="choose-item__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
+                    <div class="choose__item">
+                        <div class="choose__item-number">05</div>
+                        <div class="choose__item-icon lnr lnr-leaf"></div>
+                        <div class="choose__item-title">Life Time Free Update</div>
+                        <div class="choose__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
                     </div>
 
-                    <div class="choose-item">
-                        <div class="choose-item__number">06</div>
-                        <div class="choose-item__icon lnr lnr-phone"></div>
-                        <div class="choose-item__title">Fast and Friendly Support</div>
-                        <div class="choose-item__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
+                    <div class="choose__item">
+                        <div class="choose__item-number">06</div>
+                        <div class="choose__item-icon lnr lnr-phone"></div>
+                        <div class="choose__item-title">Fast and Friendly Support</div>
+                        <div class="choose__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</div>
                     </div>
 
         </section>
